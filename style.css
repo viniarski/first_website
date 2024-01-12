@@ -5,6 +5,14 @@ body {
     overflow-x: hidden;
 }
 
+body.dark_mode {
+    color: white;
+  }
+
+body.light_mode {
+    color: black;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,7 +25,6 @@ header {
     position: fixed;
     align-items: center;
     padding: 10px;
-    color: rgb(255, 255, 255);
     gap: 60px;
     margin-top: 40px;
 }
@@ -104,4 +111,20 @@ footer {
     color: #999999;
     padding: 40px;
     display: block;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 3px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 30px;
+    height: 30px;
 }

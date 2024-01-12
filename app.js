@@ -108,3 +108,44 @@ function removeDash5() {
 
 top_nav_5.addEventListener('mouseover', addDash5);
 top_nav_5.addEventListener('mouseout', removeDash5);
+
+
+
+let sun_moon = document.getElementById('dark_light')
+let button = document.querySelector('button')
+let forestSection_1 = document.querySelector('.forest_1');
+let forestSection_2 = document.querySelector('.forest_2');
+let forestSection_3 = document.querySelector('.forest_3');
+let navLinks = document.querySelectorAll('nav a, .button');
+
+function toggleDarkLightMode() {
+    if (document.body.classList.contains('dark_mode')) {
+        sun_moon.src = './media/moon.png';
+        forestSection_1.style.backgroundImage = "url('./photos/dark_mode_forest_1.avif')";
+        forestSection_2.style.backgroundImage = "url('./photos/dark_mode_forest_2.avif')";
+        forestSection_3.style.backgroundImage = "url('./photos/dark_mode_forest_3.avif')";
+        document.body.classList.remove('dark_mode');
+        document.body.classList.add('light_mode');
+        navLinks.forEach(link => {
+            link.style.color = 'black';
+            if (link.classList.contains('button')) {
+                link.style.borderColor = 'black';
+            }
+        });
+    } else {
+        sun_moon.src = './media/sun.png';
+        forestSection_1.style.backgroundImage = "url('./photos/forest_1.avif')";
+        forestSection_2.style.backgroundImage = "url('./photos/forest_2.avif')";
+        forestSection_3.style.backgroundImage = "url('./photos/forest_3.avif')";
+        document.body.classList.remove('light_mode');
+        document.body.classList.add('dark_mode');
+        navLinks.forEach(link => {
+            link.style.color = 'white';
+            if (link.classList.contains('button')) {
+                link.style.borderColor = 'white';
+            }
+        });
+        }
+}
+
+button.addEventListener('click', toggleDarkLightMode);
