@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    color: white;
+    text-transform: uppercase;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.feature > * {
+    margin: 10px;
+}
+
+.forest_1 {
+    background-image: url('./photos/forest_1.avif');
+}
+
+.forest_2 {
+    background-image: url('./photos/forest_2.avif');
+}
+
+.forest_3 {
+    background-image: url('./photos/forest_3.avif');
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+footer {
+    font-size: smaller;
+    font-family: Courier;
+    background: black;
+    text-align: center;
+    color: #999999;
+    padding: 40px;
+    display: block;
+}
