@@ -5,11 +5,25 @@ body {
     overflow-x: hidden;
 }
 
-body.dark_mode {
+body.dark_mode .button .name {
     color: white;
+    border-color: white;
   }
 
-body.light_mode {
+body.light_mode .button {
+    color: black;
+    border-color: black;
+}
+
+body.dark_mode a,
+body.dark_mode .sec_h1,
+body.dark_mode .sec_h2 {
+    color: white;
+}
+
+body.light_mode a,
+body.light_mode .sec_h1,
+body.light_mode .sec_h2 {
     color: black;
 }
 
@@ -31,6 +45,7 @@ header {
 
 .name {
     margin-left: 40px;
+    color: white;
 }
 
 .feature {
@@ -62,12 +77,14 @@ header {
 .sec_h1 {
     font-size: 40px;
     margin-top: 14px;
+    color: white;
 }
 
 
 .sec_h2 {
     font-size: 14px;
     font-weight: lighter;
+    color: white;
 }
 
 .box {
@@ -84,7 +101,6 @@ nav a {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    color: white;
 }
 
 .button {
@@ -125,6 +141,6 @@ button {
 }
 
 img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
